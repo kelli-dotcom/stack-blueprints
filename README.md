@@ -87,6 +87,22 @@ node bin/stack-blueprints.mjs order multi-agent
 
 ---
 
+## 🤝 Contributing
+
+We welcome new stack tier benchmarks, specialized workflow file-creation orders, and interactive explorer improvements from both **human engineers** and **AI coding agents**:
+
+```bash
+# 1. Fork & create a feature branch
+git checkout -b feat/your-stack-or-order
+
+# 2. Verify CLI recommendations & file orders (0 npm dependencies)
+node bin/stack-blueprints.mjs list && node bin/stack-blueprints.mjs recommend --ram=2 --need=mvp && node bin/stack-blueprints.mjs order kickoff
+```
+
+Read the full guide in **[`CONTRIBUTING.md`](CONTRIBUTING.md)** · **[Open an Issue](https://github.com/kelli-dotcom/stack-blueprints/issues)** · **[Submit a Pull Request](https://github.com/kelli-dotcom/stack-blueprints/pulls)**
+
+---
+
 ## 🌐 CRTA Tech Solutions Open-Source Ecosystem
 
 | Repository | What It Does |
