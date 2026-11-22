@@ -13,3 +13,10 @@
 2. **`Laid-Back Simplifier`** *(from `archetype-agent-vault/laid-back-simplifier`)* — Zero-dependency enforcer. Owns `src/stacks.mjs` and `bin/stack-blueprints.mjs` (`0` npm dependencies, Tier 0 `< 5 KB` discipline).
 3. **`Zero-Mercy Gatekeeper`** *(from `archetype-agent-vault/zero-mercy-gatekeeper`)* — Hardware & contrast QA. Verifies [`feather-speed`](https://github.com/kelli-dotcom/feather-speed) RAM/CPU budgets (`ECO` / `BALANCED` / `ULTRA`) and [`feather-themes`](https://github.com/kelli-dotcom/feather-themes) WCAG 2.1 AA/AAA tokens across all 5 tiers.
 4. **`launch-director`** *(from `github-trending-kit/agents/launch-director.md`)* — Dormant until Gatekeeper returns `status: "pass"`. Owns `README.md`, `demo/preview.svg`, and `preview/index.html`.
+
+<!-- AGENT-ETIQUETTE:START version=v1.1.0 -->
+## Agent Etiquette Protocol (Layer 3 — Pinned `v1.1.0`)
+- **Hierarchy:** Platform constraints (Layer 1) → Repository rules above (Layer 2) → Agent Etiquette (Layer 3) → Task-specific skills (Layer 4) → Handoffs (Layer 5).
+- **Behavioral Rules:** Load `skills/agent-etiquette/SKILL.md` (zero filler, verified actions only, Rule of 2 retry cap, max 3 concurrent specialists).
+- **Handoff Contract:** Validate inter-agent handoffs against `schemas/handoff.json` (`node scripts/validate-handoff.mjs <file>`).
+<!-- AGENT-ETIQUETTE:END -->
