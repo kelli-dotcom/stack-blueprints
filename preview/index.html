@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stack Blueprints — 5-Tier Developer Stack Matrix &amp; Workflow File-Order Live Demo</title>
+  <style>
+    :root {
+      --bg: #0b1120;
+      --panel: #111827;
+      --card: #1e293b;
+      --border: #334155;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --emerald: #10b981;
+      --cyan: #0ea5e9;
+      --amber: #f59e0b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      padding: 24px;
+      line-height: 1.5;
+    }
+    .container { max-width: 1120px; margin: 0 auto; }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+    }
+    .badge {
+      padding: 5px 12px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 700;
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--emerald);
+      border: 1px solid var(--emerald);
+    }
+    .tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+    .tab-btn {
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 9px 14px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .tab-btn.active {
+      border-color: var(--emerald);
+      color: var(--emerald);
+      background: rgba(16, 185, 129, 0.12);
+    }
+    .grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 20px; }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 18px;
+    }
+    .panel h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin-bottom: 14px; }
+    .spec-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      font-size: 13px;
+    }
+    .spec-row strong { color: var(--muted); }
+    .spec-row span { font-family: ui-monospace, SFMono-Regular, monospace; color: var(--text); text-align: right; max-width: 68%; }
+    .order-step {
+      background: var(--card);
+      border-left: 3px solid var(--emerald);
+      border-radius: 4px;
+      padding: 10px 12px;
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
+    .order-step code { color: #a7f3d0; font-family: ui-monospace, SFMono-Regular, monospace; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div>
+        <h1 style="font-size: 22px; font-weight: 800;">Stack Blueprints · 5-Tier Stack Matrix &amp; File-Order Explorer</h1>
+        <p style="font-size: 13px; color: var(--muted);">From &lt;5 KB Zero-Dependency Featherweight (Tier 0) to Heavy Enterprise Monorepo (Tier 4)</p>
+      </div>
+      <div id="activeTierBadge" class="badge">TIER 0 · &lt; 5 KB</div>
+    </div>
+
+    <div class="tabs" id="tierTabs">
+      <button class="tab-btn active" onclick="selectTier(0)">Tier 0 · Featherweight (&lt;5 KB)</button>
+      <button class="tab-btn" onclick="selectTier(1)">Tier 1 · Lightweight Web (&lt;60 KB)</button>
+      <button class="tab-btn" onclick="selectTier(2)">Tier 2 · Full-Stack SaaS (~115 KB)</button>
+      <button class="tab-btn" onclick="selectTier(3)">Tier 3 · Mobile + Web</button>
+      <button class="tab-btn" onclick="selectTier(4)">Tier 4 · Heavy Enterprise</button>
+    </div>
+
+    <div class="grid">
+      <div class="panel">
+        <h2>Selected Developer Stack Specification</h2>
+        <div id="stackDetails"></div>
+      </div>
+
+      <div class="panel">
+        <h2>Workflow File-Creation Order</h2>
+        <div class="tabs" id="orderTabs" style="margin-bottom:12px;">
+          <button class="tab-btn active" onclick="selectOrder('kickoff')">1. New Repo Kickoff</button>
+          <button class="tab-btn" onclick="selectOrder('feature')">2. Feature Slice</button>
+          <button class="tab-btn" onclick="selectOrder('audit')">3. QA &amp; Audit</button>
+          <button class="tab-btn" onclick="selectOrder('launch')">4. Public Launch</button>
+        </div>
+        <div id="orderDetails"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const TIERS = [
+      {
+        tier: 0, name: "Tier 0 · Featherweight (Ultra-Light)", bundle: "< 5 KB", ram: "1 GB+", speed: "Instant (0ms build)",
+        frontend: "Plain HTML5 + Vanilla ES Modules + Feather Themes CSS",
+        backend: "Static files or single Node/Bun script (0 npm deps)",
+        database: "JSON / LocalStorage / Browser IndexedDB",
+        hosting: "GitHub Pages / Cloudflare Pages / Local file",
+        bestFor: "Micro-tools, theme explorers, school Chromebooks, calculators, offline utilities",
+        crtaExample: "feather-themes, feather-speed, stack-blueprints"
+      },
+      {
+        tier: 1, name: "Tier 1 · Lightweight Fast Web", bundle: "< 60 KB", ram: "2 GB+", speed: "Sub-second build",
+        frontend: "Astro or Vite + Preact / Vanilla TypeScript + Tailwind CSS",
+        backend: "Lightweight Edge/Node API routes + Feather Speed auto-tuning",
+        database: "SQLite / Turso (libSQL)",
+        hosting: "Cloudflare Workers / Fly.io / $5 VPS",
+        bestFor: "Content directories, docs, fast landing pages, solo MVPs",
+        crtaExample: "Tech Worth Knowing"
+      },
+      {
+        tier: 2, name: "Tier 2 · Balanced Full-Stack SaaS", bundle: "~115 KB First Load JS", ram: "4 GB+", speed: "Fast (10-15s prod build)",
+        frontend: "Next.js 15 App Router + TypeScript + Tailwind + Feather Themes",
+        backend: "Next.js Server Components + Drizzle ORM + Feather Speed concurrency",
+        database: "PostgreSQL 16 + pgvector (HNSW semantic search)",
+        hosting: "Docker Compose / Vercel / Railway / Render",
+        bestFor: "Production SaaS, verified directories, AI-assisted web apps",
+        crtaExample: "openflex (61 live ATS feeds, 292+ Gatekeeper Pass)"
+      },
+      {
+        tier: 3, name: "Tier 3 · Cross-Platform Mobile + Web", bundle: "Native + <150 KB web", ram: "8 GB+", speed: "Moderate (native builds)",
+        frontend: "Expo (React Native) or Flutter + Feather Themes tokens.json",
+        backend: "TypeScript API / Supabase (Postgres + Auth + Storage + Realtime)",
+        database: "PostgreSQL + offline SQLite sync",
+        hosting: "EAS / App Store / Google Play + Docker API",
+        bestFor: "Field operations, food trucks, school asset NFC scanners, offline-first mobile",
+        crtaExample: "GetCrowd, School IT Asset Tracker"
+      },
+      {
+        tier: 4, name: "Tier 4 · Heavy High-Scale Enterprise", bundle: "Multi-package monorepo", ram: "16 GB+", speed: "Heavy (CI-cached builds)",
+        frontend: "Turborepo Monorepo + Shared Design System + Next.js Apps",
+        backend: "Dedicated Go/Rust/Node microservices + Queue Workers (Redis/BullMQ)",
+        database: "Managed HA PostgreSQL + Read Replicas + Object Storage + Vector DB",
+        hosting: "Kubernetes / AWS ECS / Multi-region Docker",
+        bestFor: "Multi-team enterprise platforms, high-throughput ingestion pipelines",
+        crtaExample: "Multi-district School Kitchen OS"
+      }
+    ];
+
+    const ORDERS = {
+      kickoff: [
+        "1. Governance & Agent Entrypoints: <code>AGENTS.md -> llms.txt -> HANDOFF.md -> mistakes.md -> LICENSE</code>",
+        "2. Product & UX Contract: <code>design-spec/ -> skills/*/SKILL.md</code>",
+        "3. Environment & Types: <code>.gitignore -> .env.example -> package.json -> tsconfig.json</code>",
+        "4. Data & Schemas: <code>src/db/schema.ts -> validators -> types</code>",
+        "5. Pure Core Engine: <code>src/lib/* (zero UI coupling, 100% testable)</code>",
+        "6. UI & Feather Themes: <code>globals.css -> layout -> components -> preview/index.html</code>",
+        "7. Proof & Launch: <code>ci.yml -> assets/demo.gif -> top-GitHub README.md</code>"
+      ],
+      feature: [
+        "1. Update Contract First: <code>design-spec/ -> types / schema</code>",
+        "2. Pure Logic & Scoring: <code>src/lib/* + unit smoke test</code>",
+        "3. Wire UI Component: <code>src/app/* with Feather Speed budgets</code>",
+        "4. Verify & Log: <code>tsc --noEmit -> build -> update HANDOFF.md</code>"
+      ],
+      audit: [
+        "1. Static Type & Schema Check: <code>tsc --noEmit && validate-handoff.ts</code>",
+        "2. Live Link & Contrast Audit: <code>audit-links.ts && feather-themes verify</code>",
+        "3. Hardware Budget Check: <code>feather-perf diagnose (ECO / BALANCED / ULTRA)</code>",
+        "4. Record Guardrails: <code>append root cause & rule to mistakes.md</code>"
+      ],
+      launch: [
+        "1. Live Interactive Demo: <code>preview/index.html or localhost:3000</code>",
+        "2. Capture Real Visual Proof: <code>assets/demo.gif (Mandatory README rule)</code>",
+        "3. Top-1% GitHub README: <code>10s Hero + Shields + Demo GIF + 5W+H Clarity Story</code>",
+        "4. Cross-Link Ecosystem: <code>Update CRTA-Master-Spec & GitHub Profile README</code>"
+      ]
+    };
+
+    function selectTier(idx) {
+      const t = TIERS[idx];
+      document.querySelectorAll("#tierTabs .tab-btn").forEach((b, i) => b.classList.toggle("active", i === idx));
+      document.getElementById("activeTierBadge").textContent = "TIER " + t.tier + " · " + t.bundle;
+      document.getElementById("stackDetails").innerHTML = `
+        <div class="spec-row"><strong>Tier Name</strong><span>${t.name}</span></div>
+        <div class="spec-row"><strong>Bundle Budget</strong><span style="color:var(--emerald);font-weight:700;">${t.bundle}</span></div>
+        <div class="spec-row"><strong>Min Device RAM</strong><span>${t.ram}</span></div>
+        <div class="spec-row"><strong>Build Speed</strong><span>${t.speed}</span></div>
+        <div class="spec-row"><strong>Frontend Stack</strong><span>${t.frontend}</span></div>
+        <div class="spec-row"><strong>Backend Stack</strong><span>${t.backend}</span></div>
+        <div class="spec-row"><strong>Database</strong><span>${t.database}</span></div>
+        <div class="spec-row"><strong>Hosting Target</strong><span>${t.hosting}</span></div>
+        <div class="spec-row"><strong>Best Used For</strong><span>${t.bestFor}</span></div>
+        <div class="spec-row"><strong>CRTA Production Use</strong><span style="color:var(--cyan);">${t.crtaExample}</span></div>
+      `;
+    }
+
+    function selectOrder(key) {
+      const keys = ["kickoff", "feature", "audit", "launch"];
+      document.querySelectorAll("#orderTabs .tab-btn").forEach((b, i) => b.classList.toggle("active", keys[i] === key));
+      document.getElementById("orderDetails").innerHTML = ORDERS[key].map(s => `<div class="order-step">${s}</div>`).join("");
+    }
+
+    selectTier(0);
+    selectOrder("kickoff");
+  </script>
+</body>
+</html>

@@ -34,6 +34,13 @@ Developers routinely reach for heavy enterprise monorepos for a weekend tool—o
 - **Built For:** Solo founders, full-stack engineers, educators, and AI coding agents starting new projects under real RAM, speed, and budget constraints.
 - **When to Reach for It:** In the first 5 minutes of every new repository—before running `npm init` or writing a single line of code.
 - **Runs Everywhere:** Zero-dependency Node/Bun CLI (`bin/stack-blueprints.mjs`) + drop-in AI agent skill (`skills/stack-selector/SKILL.md`).
+- **Configured with All 6 CRTA Pillars:**
+  1. **[`stack-blueprints`](https://github.com/kelli-dotcom/stack-blueprints):** Self-configured on **Tier 0 (`<5 KB`, 0 deps)** following the exact `kickoff` & `launch` file-creation orders.
+  2. **[`feather-speed`](https://github.com/kelli-dotcom/feather-speed):** Hardware-aware RAM, CPU & network budgets (`ECO` / `BALANCED` / `ULTRA`) baked into every stack tier.
+  3. **[`feather-themes`](https://github.com/kelli-dotcom/feather-themes):** 1,092 zero-dependency photobiology WCAG 2.1 AA/AAA CSS & JSON tokens wired into the stack defaults and `preview/index.html`.
+  4. **[`agent-etiquette`](https://github.com/kelli-dotcom/agent-etiquette):** Enforces the 3-agent concurrency cap, Rule-of-2 loop breaker, and `verified_artifacts` contract in [`AGENTS.md`](AGENTS.md).
+  5. **[`archetype-agent-vault`](https://github.com/kelli-dotcom/archetype-agent-vault):** Governed by `The Boss` (`waste-management`), `Laid-Back Simplifier`, and `Zero-Mercy Gatekeeper`.
+  6. **[`github-trending-kit`](https://github.com/kelli-dotcom/github-trending-kit):** Ships with `launch-director` Developer SDK README archetype, `demo/preview.svg`, and interactive `preview/index.html`.
 
 ---
 
@@ -41,7 +48,7 @@ Developers routinely reach for heavy enterprise monorepos for a weekend tool—o
 
 | Tier | Name | Target Weight | Min RAM | Speed | Stack | Best Used For |
 | :---: | :--- | :---: | :---: | :---: | :--- | :--- |
-| **0** | **Featherweight** | `< 5 KB` (0 deps) | `1 GB` | Instant | HTML5 + Vanilla ES + `feather-themes` + `feather-perf` | Micro-tools, theme kits, Chromebooks, offline utilities |
+| **0** | **Featherweight** | `< 5 KB` (0 deps) | `1 GB` | Instant | HTML5 + Vanilla ES + `feather-themes` + `feather-speed` | Micro-tools, theme kits, Chromebooks, offline utilities |
 | **1** | **Lightweight** | `< 60 KB` JS | `2 GB` | Sub-sec | Astro / Vite + Preact/TS + Tailwind + SQLite/Turso | Fast directories, docs, solo MVPs on a \$5 VPS |
 | **2** | **Balanced SaaS** | `~115 KB` JS | `4 GB` | Fast | Next.js 15 + TS + Drizzle + Postgres `pgvector` + Docker | Live web apps & AI tools (e.g., **[Openflex](https://github.com/kelli-dotcom/openflex)**) |
 | **3** | **Cross-Platform** | Native + Web | `8 GB` | Moderate | Expo (RN) / Flutter + Supabase/Postgres + offline SQLite | Field ops, school kitchens, NFC/camera mobile apps |
@@ -86,7 +93,7 @@ node bin/stack-blueprints.mjs order multi-agent
 | :--- | :--- |
 | **[openflex](https://github.com/kelli-dotcom/openflex)** | Zero-cost, anti-ghost, Remote-Truth job board (Tier 2 reference app) |
 | **[stack-blueprints](https://github.com/kelli-dotcom/stack-blueprints)** | 5-tier dev stack matrix & workflow file orders *(this repo)* |
-| **[feather-perf](https://github.com/kelli-dotcom/feather-perf)** | Hardware-aware adaptive frontend & backend performance engine |
+| **[feather-speed](https://github.com/kelli-dotcom/feather-speed)** | Hardware-aware adaptive frontend & backend speed engine (`ECO` / `BALANCED` / `ULTRA`) |
 | **[feather-themes](https://github.com/kelli-dotcom/feather-themes)** | 1,092 photobiology-calibrated, 0-dep WCAG AA/AAA themes |
 | **[agent-etiquette](https://github.com/kelli-dotcom/agent-etiquette)** | Multi-agent workflow rules, JSON handoff schemas & Rule of 2 loop caps |
 | **[archetype-agent-vault](https://github.com/kelli-dotcom/archetype-agent-vault)** | 7 character-driven AI coding agent suites (27 specialists) |
