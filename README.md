@@ -50,7 +50,7 @@ Developers routinely reach for heavy enterprise monorepos for a weekend tool—o
 | :---: | :--- | :---: | :---: | :---: | :--- | :--- |
 | **0** | **Featherweight** | `< 5 KB` (0 deps) | `1 GB` | Instant | HTML5 + Vanilla ES + `feather-themes` + `feather-speed` | Micro-tools, theme kits, Chromebooks, offline utilities |
 | **1** | **Lightweight** | `< 60 KB` JS | `2 GB` | Sub-sec | Astro / Vite + Preact/TS + Tailwind + SQLite/Turso | Fast directories, docs, solo MVPs on a \$5 VPS |
-| **2** | **Balanced SaaS** | `~115 KB` JS | `4 GB` | Fast | Next.js 15 + TS + Drizzle + Postgres `pgvector` + Docker | Live web apps & AI tools (e.g., **[Openflex](https://github.com/kelli-dotcom/openflex)**) |
+| **2** | **Balanced SaaS** | `~115 KB` JS | `4 GB` | Fast | Next.js 15 + TS + Drizzle + Postgres `pgvector` + Docker | Live web apps & AI tools (e.g., **Openflex** *(CRTA Proprietary Platform)*) |
 | **3** | **Cross-Platform** | Native + Web | `8 GB` | Moderate | Expo (RN) / Flutter + Supabase/Postgres + offline SQLite | Field ops, school kitchens, NFC/camera mobile apps |
 | **4** | **Heavy Enterprise** | Monorepo | `16 GB+` | CI-cached | Turborepo + Go/Rust/Node workers + Redis + K8s + OTel | Multi-team platforms, millions of reqs/day, SOC2/HIPAA |
 
@@ -138,7 +138,7 @@ Read the full guide in **[`CONTRIBUTING.md`](CONTRIBUTING.md)** · **[Open an Is
 
 | Repository | What It Does |
 | :--- | :--- |
-| **[openflex](https://github.com/kelli-dotcom/openflex)** | Zero-cost, anti-ghost, Remote-Truth job board (Tier 2 reference app) |
+| **Openflex** *(CRTA Proprietary Platform)* | Zero-cost, anti-ghost, Remote-Truth job board (Tier 2 reference app) |
 | **[stack-blueprints](https://github.com/kelli-dotcom/stack-blueprints)** | 5-tier dev stack matrix & workflow file orders *(this repo)* |
 | **[feather-speed](https://github.com/kelli-dotcom/feather-speed)** | Hardware-aware adaptive frontend & backend speed engine (`ECO` / `BALANCED` / `ULTRA`) |
 | **[feather-themes](https://github.com/kelli-dotcom/feather-themes)** | 1,092 photobiology-calibrated, 0-dep WCAG AA/AAA themes |
