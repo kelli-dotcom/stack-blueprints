@@ -1,0 +1,16 @@
+{
+  "name": "stack-blueprints",
+  "version": "1.0.0",
+  "description": "Zero-dependency developer stack matrix (from lightest <5KB to heavy enterprise) + workflow file-order playbooks, CLI recommender & AI agent skill. By CRTA Tech Solutions.",
+  "type": "module",
+  "main": "src/stacks.mjs",
+  "bin": {
+    "stack-blueprints": "./bin/stack-blueprints.mjs"
+  },
+  "scripts": {
+    "list": "node bin/stack-blueprints.mjs list",
+    "recommend": "node bin/stack-blueprints.mjs recommend"
+  },
+  "author": "CRTA Tech Solutions",
+  "license": "MIT"
+}
