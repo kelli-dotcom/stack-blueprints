@@ -70,20 +70,51 @@ Run `node bin/stack-blueprints.mjs order <name>` to print the exact step-by-step
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Quick Start (PC / Laptop & Mobile)
+
+### 💻 1. PC / Laptop Quick Start (Mac, Windows, Linux & Chromebook)
 
 ```bash
-# 1. List all 5 tiers from Lightest to Heavy Enterprise
+# 1. Clone Stack Blueprints (0 npm dependencies)
+git clone https://github.com/kelli-dotcom/stack-blueprints.git && cd stack-blueprints
+
+# 2. List all 5 tiers from Lightest (<5 KB) to Heavy Enterprise
 node bin/stack-blueprints.mjs list
 
-# 2. Get an instant stack recommendation for your RAM & project need
+# 3. Get an instant stack recommendation for your RAM & project need
 node bin/stack-blueprints.mjs recommend --ram=2 --need=mvp
 node bin/stack-blueprints.mjs recommend --ram=8 --need=mobile
 
-# 3. Print the exact workflow file order for your current stage
+# 4. Print the exact workflow file-creation order for your current stage
 node bin/stack-blueprints.mjs order kickoff
 node bin/stack-blueprints.mjs order multi-agent
 ```
+
+Or add the 1-line `AGENTS.md` progressive disclosure pointer to any project:
+```markdown
+- **Stack & File-Order Selection:** Follow `skills/stack-selector/SKILL.md` (`https://github.com/kelli-dotcom/stack-blueprints`) to pick the lowest qualifying stack tier and exact workflow file-creation order.
+```
+
+### 📱 2. Mobile Quick Start (iPhone, iPad & Android)
+
+<details>
+<summary><strong>📱 Download &amp; Use on Mobile (iOS / Android)</strong></summary>
+
+<br />
+
+1. **1-Tap Direct Download:**  
+   👉 **[Download ZIP (Mobile-Friendly)](https://github.com/kelli-dotcom/stack-blueprints/archive/refs/heads/main.zip)**
+
+2. **Quick Unzip Steps:**
+   - **iPhone / iPad (iOS):** Open **Files** → **Downloads** → tap `stack-blueprints-main.zip` once to unzip.
+   - **Android:** Open **Files by Google** (or **My Files**) → **Downloads** → tap `stack-blueprints-main.zip` → tap **Extract**.
+   - **Mobile Browser Tip:** Tap the browser menu (`AA` or `⋮`) → **Request Desktop Website** to reveal GitHub's green **Code → Download ZIP** button anytime.
+
+3. **Explore & Use Immediately on Mobile:**
+   - **Interactive 5-Tier Explorer on Your Phone:** Tap `preview/index.html` inside the unzipped folder to interactively browse all 5 stack tiers and 4 workflow file-creation orders in your mobile browser.
+   - **Attach in Gemini / Claude / ChatGPT Mobile Apps:** Attach `skills/stack-selector/SKILL.md` and `design-spec/STACK_MATRIX_SPEC.md` in your mobile AI app (or upload once to a **Gemini Gem / Claude Project**) to plan new software architectures from your phone.
+
+</details>
 
 ---
 
