@@ -1,0 +1,18 @@
+# Stack Blueprints
+
+> Zero-dependency 5-tier developer stack matrix (Tier 0 `<5 KB` Featherweight to Tier 4 Heavy Enterprise) + workflow file-creation orders, CLI recommender, and AI agent skill.
+
+## Agent Entry Points (All Models)
+- `AGENTS.md` — Project guardrails and model-agnostic rules.
+- `HANDOFF.md` — Active state, verification command, and next step.
+- `mistakes.md` — Permanent "Never Repeat" guardrail log.
+- `design-spec/STACK_MATRIX_SPEC.md` — Full 5-tier selection & file-ordering spec.
+- `skills/stack-selector/SKILL.md` — Reusable AI agent skill for picking stacks & file orders.
+
+## Key Paths
+- `src/stacks.mjs` — Stack tier definitions and workflow file-creation orders (`kickoff`, `feature`, `audit`, `launch`).
+- `bin/stack-blueprints.mjs` — Zero-dependency CLI (`list`, `recommend`, `order`).
+- `demo/preview.svg` — Visual stack matrix & workflow preview.
+
+## Verification Command
+`node bin/stack-blueprints.mjs list && node bin/stack-blueprints.mjs recommend --ram=2 --need=mvp && node bin/stack-blueprints.mjs order kickoff`
