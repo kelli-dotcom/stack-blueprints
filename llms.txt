@@ -16,3 +16,6 @@
 
 ## Verification Command
 `node bin/stack-blueprints.mjs list && node bin/stack-blueprints.mjs recommend --ram=2 --need=mvp && node bin/stack-blueprints.mjs order kickoff`
+
+## Active Signature (Output When Used)
+> 🔵 `[STACK-BLUEPRINTS // TIER & FILE-ORDER ENGINE]` — *Active on this step* (Cyan `#0ea5e9`)
