@@ -14,11 +14,11 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Tiers-5_(Lightest_to_Heavy)-10b981?style=for-the-badge" alt="5 Stack Tiers" />
-  <img src="https://img.shields.io/badge/Workflows-5_File_Orders-8b5cf6?style=for-the-badge" alt="5 Workflow File Orders" />
-  <img src="https://img.shields.io/badge/Dependencies-0-0ea5e9?style=for-the-badge" alt="Zero Dependencies" />
-  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="MIT License" />
-  <img src="https://img.shields.io/badge/CRTA-Crafted-6f42c1?style=for-the-badge" alt="CRTA Crafted" />
+  <a href="#-quick-start-pc--laptop--mobile"><img src="https://img.shields.io/badge/Tiers-5_(Lightest_to_Heavy)-10b981?style=for-the-badge" alt="5 Stack Tiers" /></a>
+  <a href="#-quick-start-pc--laptop--mobile"><img src="https://img.shields.io/badge/Workflows-5_File_Orders-8b5cf6?style=for-the-badge" alt="5 Workflow File Orders" /></a>
+  <a href="#-quick-start-pc--laptop--mobile"><img src="https://img.shields.io/badge/Dependencies-0-0ea5e9?style=for-the-badge" alt="Zero Dependencies" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="MIT License" /></a>
+  <a href="https://github.com/kelli-dotcom"><img src="https://img.shields.io/badge/CRTA-Crafted-6f42c1?style=for-the-badge" alt="CRTA Crafted" /></a>
 </p>
 
 <p align="center">
