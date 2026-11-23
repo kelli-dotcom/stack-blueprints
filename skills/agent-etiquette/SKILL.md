@@ -25,3 +25,10 @@ description: Behavioral protocol for AI coding agents enforcing zero conversatio
 - Cap active multi-agent workflows at **3 concurrent specialists**.
 - Load skills and schemas **on demand** (progressive disclosure) instead of pasting full playbooks into every prompt.
 - Pass state between agents exclusively through [`schemas/handoff.json`](../../schemas/handoff.json).
+
+## 🎨 Active Signature (All AI Models)
+When any AI model (Claude, Gemini, ChatGPT/Codex, Cursor, Windsurf, Antigravity, Copilot, OpenHands, or local LLMs) runs this skill, open the step with this exact monospace signature callout (Cyan `#0ea5e9`):
+
+```markdown
+> 🔵 `[STACK-BLUEPRINTS // TIER & FILE-ORDER ENGINE]` — *Active on this step*
+```
