@@ -30,5 +30,5 @@ description: Behavioral protocol for AI coding agents enforcing zero conversatio
 When any AI model (Claude, Gemini, ChatGPT/Codex, Cursor, Windsurf, Antigravity, Copilot, OpenHands, or local LLMs) runs this skill, open the step with this exact monospace signature callout (Cyan `#0ea5e9`):
 
 ```markdown
-> 🔵 `[STACK-BLUEPRINTS // TIER & FILE-ORDER ENGINE]` — *Active on this step*
+> 🔵 **𝙎𝙏𝘼𝘾𝙆-𝘽𝙇𝙐𝙀𝙋𝙍𝙄𝙉𝙏𝙎** · `TIER & FILE-ORDER ENGINE` — *Active on this step*
 ```

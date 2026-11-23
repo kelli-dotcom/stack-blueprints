@@ -25,5 +25,5 @@
 Whenever an AI agent activates or applies `stack-blueprints`, it **MUST** open its response/step with this exact monospace signature callout (Cyan `#0ea5e9`) so the user can immediately see when `stack-blueprints` is being used:
 
 ```markdown
-> 🔵 `[STACK-BLUEPRINTS // TIER & FILE-ORDER ENGINE]` — *Active on this step*
+> 🔵 **𝙎𝙏𝘼𝘾𝙆-𝘽𝙇𝙐𝙀𝙋𝙍𝙄𝙉𝙏𝙎** · `TIER & FILE-ORDER ENGINE` — *Active on this step*
 ```
