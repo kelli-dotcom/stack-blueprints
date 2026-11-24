@@ -1,4 +1,8 @@
-<h1 align="center">Stack Blueprints</h1>
+<p align="center">
+  <a href="https://kelli-dotcom.github.io/stack-blueprints/preview/">
+    <img src="demo/hero-banner.svg" alt="Stack Blueprints — 5-Tier Ocean Blue Stack Ladder (<5 KB to Enterprise)" width="100%" />
+  </a>
+</p>
 
 <p align="center">
   <strong>Developer stack matrix (from ultra-light &lt;5 KB to heavy enterprise) + exact workflow file-creation orders for every build specification.</strong><br />
@@ -6,23 +10,34 @@
 </p>
 
 <p align="center">
+  <a href="https://kelli-dotcom.github.io/stack-blueprints/preview/"><strong>🚀 Live Stack Recommender</strong></a> ·
   <a href="#-the-5-tier-stack-matrix-lightest--heavy"><strong>Stack Matrix</strong></a> ·
   <a href="#-workflow-file-orders-by-need"><strong>File Orders</strong></a> ·
-  <a href="#-quick-start"><strong>Quick Start</strong></a> ·
+  <a href="#-quick-start-pc--laptop--mobile"><strong>Quick Start</strong></a> ·
   <a href="skills/stack-selector/SKILL.md"><strong>AI Skill</strong></a> ·
   <a href="https://github.com/kelli-dotcom/stack-blueprints/issues"><strong>Request Stack</strong></a>
 </p>
 
 <p align="center">
-  <a href="#-quick-start-pc--laptop--mobile"><img src="https://img.shields.io/badge/Tiers-5_(Lightest_to_Heavy)-10b981?style=for-the-badge" alt="5 Stack Tiers" /></a>
-  <a href="#-quick-start-pc--laptop--mobile"><img src="https://img.shields.io/badge/Workflows-5_File_Orders-8b5cf6?style=for-the-badge" alt="5 Workflow File Orders" /></a>
-  <a href="#-quick-start-pc--laptop--mobile"><img src="https://img.shields.io/badge/Dependencies-0-0ea5e9?style=for-the-badge" alt="Zero Dependencies" /></a>
+  <a href="https://kelli-dotcom.github.io/stack-blueprints/preview/"><img src="https://img.shields.io/badge/Live_Demo-Stack_Recommender-0ea5e9?style=for-the-badge" alt="Launch Live Stack Recommender" /></a>
+  <a href="#-the-5-tier-stack-matrix-lightest--heavy"><img src="https://img.shields.io/badge/Tiers-5_(Lightest_to_Heavy)-10b981?style=for-the-badge" alt="5 Stack Tiers" /></a>
+  <a href="#-workflow-file-orders-by-need"><img src="https://img.shields.io/badge/Workflows-5_File_Orders-8b5cf6?style=for-the-badge" alt="5 Workflow File Orders" /></a>
+  <a href="#-quick-start-pc--laptop--mobile"><img src="https://img.shields.io/badge/Dependencies-0-0284c7?style=for-the-badge" alt="Zero Dependencies" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="MIT License" /></a>
   <a href="https://github.com/kelli-dotcom"><img src="https://img.shields.io/badge/CRTA-Crafted-6f42c1?style=for-the-badge" alt="CRTA Crafted" /></a>
 </p>
 
+---
+
+## 🧭 Live Interactive Stack Recommender
+
+> 👉 **[Launch the Live 5-Tier Stack Recommender & File-Order Explorer →](https://kelli-dotcom.github.io/stack-blueprints/preview/)**  
+> Select your device RAM and what you are building — instantly recommends the lightest viable stack (`Tier 0` to `Tier 4`) and gives you a 1-click copyable file-creation order.
+
 <p align="center">
-  <img src="demo/preview.svg" alt="Stack Blueprints CLI Recommender and 5-Tier Stack Matrix Demo" width="90%" />
+  <a href="https://kelli-dotcom.github.io/stack-blueprints/preview/">
+    <img src="demo/preview.svg" alt="Stack Blueprints — 5-Tier Stack Selector and Exact File-Creation Order" width="96%" />
+  </a>
 </p>
 
 ---
@@ -50,7 +65,7 @@ Developers routinely reach for heavy enterprise monorepos for a weekend tool—o
 | :---: | :--- | :---: | :---: | :---: | :--- | :--- |
 | **0** | **Featherweight** | `< 5 KB` (0 deps) | `1 GB` | Instant | HTML5 + Vanilla ES + `feather-themes` + `feather-speed` | Micro-tools, theme kits, Chromebooks, offline utilities |
 | **1** | **Lightweight** | `< 60 KB` JS | `2 GB` | Sub-sec | Astro / Vite + Preact/TS + Tailwind + SQLite/Turso | Fast directories, docs, solo MVPs on a \$5 VPS |
-| **2** | **Balanced SaaS** | `~115 KB` JS | `4 GB` | Fast | Next.js 15 + TS + Drizzle + Postgres `pgvector` + Docker | Live web apps & AI tools (e.g., **Openflex** *(CRTA Proprietary Platform)*) |
+| **2** | **Balanced SaaS** | `~115 KB` JS | `4 GB` | Fast | Next.js 15 + TS + Drizzle + Postgres `pgvector` + Docker | Live web apps & AI tools (e.g., **[Openflex](https://github.com/kelli-dotcom/openflex)** *(Public MIT)*) |
 | **3** | **Cross-Platform** | Native + Web | `8 GB` | Moderate | Expo (RN) / Flutter + Supabase/Postgres + offline SQLite | Field ops, school kitchens, NFC/camera mobile apps |
 | **4** | **Heavy Enterprise** | Monorepo | `16 GB+` | CI-cached | Turborepo + Go/Rust/Node workers + Redis + K8s + OTel | Multi-team platforms, millions of reqs/day, SOC2/HIPAA |
 
@@ -138,7 +153,7 @@ Read the full guide in **[`CONTRIBUTING.md`](CONTRIBUTING.md)** · **[Open an Is
 
 | Repository | What It Does |
 | :--- | :--- |
-| **Openflex** *(CRTA Proprietary Platform)* | Zero-cost, anti-ghost, Remote-Truth job board (Tier 2 reference app) |
+| **[openflex](https://github.com/kelli-dotcom/openflex)** | Zero-cost, anti-ghost, Remote-Truth job board (Tier 2 reference app · Public MIT) |
 | **[stack-blueprints](https://github.com/kelli-dotcom/stack-blueprints)** | 5-tier dev stack matrix & workflow file orders *(this repo)* |
 | **[feather-speed](https://github.com/kelli-dotcom/feather-speed)** | Hardware-aware adaptive frontend & backend speed engine (`ECO` / `BALANCED` / `ULTRA`) |
 | **[feather-themes](https://github.com/kelli-dotcom/feather-themes)** | 1,092 photobiology-calibrated, 0-dep WCAG AA/AAA themes |

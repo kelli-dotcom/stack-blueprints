@@ -1,35 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360">
-  <rect width="900" height="360" rx="10" fill="#09090b"/>
-  <rect width="900" height="40" rx="10" fill="#18181b"/>
-  <circle cx="22" cy="20" r="6" fill="#f43f5e"/><circle cx="42" cy="20" r="6" fill="#f59e0b"/><circle cx="62" cy="20" r="6" fill="#10b981"/>
-  <text x="450" y="25" text-anchor="middle" fill="#a1a1aa" font-family="Menlo, monospace" font-size="13">stack-blueprints — Lightest (&lt;5KB) to Heavy Enterprise + Workflow File Orders</text>
-  <text x="32" y="82" fill="#7dcfff" font-family="Menlo, monospace" font-size="14">$ node bin/stack-blueprints.mjs recommend --ram=2 --need=mvp</text>
-  <text x="32" y="108" fill="#10b981" font-family="Menlo, monospace" font-size="14">Recommended: Tier 0 · Featherweight (&lt;5 KB, 0 deps, instant build)</text>
-  <text x="32" y="144" fill="#7dcfff" font-family="Menlo, monospace" font-size="14">$ node bin/stack-blueprints.mjs order kickoff</text>
-  <text x="32" y="170" fill="#e4e4e7" font-family="Menlo, monospace" font-size="13">1. AGENTS.md &amp; Specs -&gt; 2. Config -&gt; 3. Schema -&gt; 4. Core Logic -&gt; 5. UI -&gt; 6. CI -&gt; 7. Demo GIF</text>
-  <rect x="32" y="200" width="160" height="122" rx="6" fill="#18181b" stroke="#10b981"/>
-  <text x="44" y="226" fill="#10b981" font-family="Menlo, monospace" font-weight="700" font-size="12">TIER 0 · FEATHER</text>
-  <text x="44" y="252" fill="#e4e4e7" font-family="Menlo, monospace" font-size="11">&lt;5 KB · 0 deps</text>
-  <text x="44" y="274" fill="#a1a1aa" font-family="Menlo, monospace" font-size="11">HTML + ES Mod</text>
-  <text x="44" y="296" fill="#a1a1aa" font-family="Menlo, monospace" font-size="11">1GB RAM OK</text>
-  <rect x="202" y="200" width="160" height="122" rx="6" fill="#18181b" stroke="#34d399"/>
-  <text x="214" y="226" fill="#34d399" font-family="Menlo, monospace" font-weight="700" font-size="12">TIER 1 · LIGHT</text>
-  <text x="214" y="252" fill="#e4e4e7" font-family="Menlo, monospace" font-size="11">&lt;60 KB JS</text>
-  <text x="214" y="274" fill="#a1a1aa" font-family="Menlo, monospace" font-size="11">Astro/Vite+SQLite</text>
-  <text x="214" y="296" fill="#a1a1aa" font-family="Menlo, monospace" font-size="11">2GB RAM OK</text>
-  <rect x="372" y="200" width="160" height="122" rx="6" fill="#18181b" stroke="#0ea5e9"/>
-  <text x="384" y="226" fill="#0ea5e9" font-family="Menlo, monospace" font-weight="700" font-size="12">TIER 2 · SAAS</text>
-  <text x="384" y="252" fill="#e4e4e7" font-family="Menlo, monospace" font-size="11">~115 KB JS</text>
-  <text x="384" y="274" fill="#a1a1aa" font-family="Menlo, monospace" font-size="11">Next 15+Drizzle</text>
-  <text x="384" y="296" fill="#a1a1aa" font-family="Menlo, monospace" font-size="11">Openflex-grade</text>
-  <rect x="542" y="200" width="160" height="122" rx="6" fill="#18181b" stroke="#8b5cf6"/>
-  <text x="554" y="226" fill="#8b5cf6" font-family="Menlo, monospace" font-weight="700" font-size="12">TIER 3 · MOBILE</text>
-  <text x="554" y="252" fill="#e4e4e7" font-family="Menlo, monospace" font-size="11">Native + Web</text>
-  <text x="554" y="274" fill="#a1a1aa" font-family="Menlo, monospace" font-size="11">Expo/Flutter+PG</text>
-  <text x="554" y="296" fill="#a1a1aa" font-family="Menlo, monospace" font-size="11">Offline Sync</text>
-  <rect x="712" y="200" width="156" height="122" rx="6" fill="#18181b" stroke="#f59e0b"/>
-  <text x="724" y="226" fill="#f59e0b" font-family="Menlo, monospace" font-weight="700" font-size="12">TIER 4 · HEAVY</text>
-  <text x="724" y="252" fill="#e4e4e7" font-family="Menlo, monospace" font-size="11">Monorepo + K8s</text>
-  <text x="724" y="274" fill="#a1a1aa" font-family="Menlo, monospace" font-size="11">Go/Rust+Redis</text>
-  <text x="724" y="296" fill="#a1a1aa" font-family="Menlo, monospace" font-size="11">Multi-team</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 410" width="100%" height="100%">
+  <rect width="980" height="410" rx="12" fill="#041524" stroke="#0284c7" stroke-width="2"/>
+
+  <!-- Header Strip -->
+  <rect x="24" y="22" width="932" height="44" rx="7" fill="#082f49" stroke="#0369a1"/>
+  <text x="42" y="49" fill="#e0f2fe" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">STACK SELECTOR MATRIX  ·  HARDWARE RAM + GOAL  ──►  RIGHT-SIZED TIER + EXACT FILE ORDER</text>
+  <rect x="790" y="31" width="150" height="26" rx="5" fill="#0c4a6e" stroke="#38bdf8"/>
+  <text x="865" y="48" fill="#7dd3fc" font-family="ui-monospace, monospace" font-size="11" font-weight="700" text-anchor="middle">CLI + LIVE WEB APP</text>
+
+  <!-- Left Panel: 5-Tier Escalator -->
+  <rect x="24" y="82" width="510" height="304" rx="8" fill="#061e33" stroke="#075985"/>
+  <text x="42" y="108" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="12" font-weight="700" letter-spacing="1">01 · CHOOSE THE LIGHTEST VIABLE STACK TIER</text>
+
+  <g font-family="ui-monospace, monospace" font-size="11.5">
+    <rect x="42" y="122" width="474" height="44" rx="5" fill="#083344" stroke="#2dd4bf" stroke-width="1.3"/>
+    <text x="56" y="142" fill="#5eead4" font-weight="800">TIER 0 · Featherweight (&lt;5 KB · 1GB RAM)</text>
+    <text x="56" y="158" fill="#cbd5e1" font-family="sans-serif" font-size="11">HTML5 + Vanilla ES + Feather Themes · 0 npm deps · Instant</text>
+
+    <rect x="42" y="174" width="474" height="44" rx="5" fill="#082f49" stroke="#0ea5e9"/>
+    <text x="56" y="194" fill="#7dd3fc" font-weight="700">TIER 1 · Lightweight Web (&lt;60 KB · 2GB RAM)</text>
+    <text x="56" y="210" fill="#cbd5e1" font-family="sans-serif" font-size="11">Astro / Vite + Preact/TS + SQLite/Turso · Sub-second builds</text>
+
+    <rect x="42" y="226" width="474" height="44" rx="5" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.4"/>
+    <text x="56" y="246" fill="#ffffff" font-weight="800">TIER 2 · Balanced SaaS (~115 KB · 4GB RAM)</text>
+    <text x="56" y="262" fill="#e0f2fe" font-family="sans-serif" font-size="11">Next.js 15 + Drizzle + PostgreSQL pgvector + Docker (Powers Openflex)</text>
+
+    <rect x="42" y="278" width="474" height="44" rx="5" fill="#082f49" stroke="#0284c7"/>
+    <text x="56" y="298" fill="#bae6fd" font-weight="700">TIER 3 · Cross-Platform Mobile + Web (8GB RAM)</text>
+    <text x="56" y="314" fill="#cbd5e1" font-family="sans-serif" font-size="11">Expo / Flutter + Postgres + Offline SQLite Sync</text>
+
+    <rect x="42" y="330" width="474" height="44" rx="5" fill="#082f49" stroke="#0369a1"/>
+    <text x="56" y="350" fill="#93c5fd" font-weight="700">TIER 4 · Heavy Enterprise Monorepo (16GB+ RAM)</text>
+    <text x="56" y="366" fill="#cbd5e1" font-family="sans-serif" font-size="11">Turborepo + Go/Rust/Node Workers + Redis + Kubernetes</text>
+  </g>
+
+  <!-- Right Panel: Exact File-Creation Sequence -->
+  <rect x="552" y="82" width="404" height="304" rx="8" fill="#061e33" stroke="#0ea5e9" stroke-width="1.4"/>
+  <text x="570" y="108" fill="#7dd3fc" font-family="ui-monospace, monospace" font-size="12" font-weight="700" letter-spacing="1">02 · BUILD IN EXACT FILE ORDER</text>
+
+  <g font-family="ui-monospace, monospace" font-size="11" fill="#e2e8f0">
+    <rect x="570" y="124" width="368" height="32" rx="4" fill="#082f49" stroke="#0369a1"/>
+    <text x="582" y="144"><tspan fill="#38bdf8" font-weight="700">STEP 1</tspan>  AGENTS.md → llms.txt → HANDOFF.md</text>
+
+    <rect x="570" y="162" width="368" height="32" rx="4" fill="#082f49" stroke="#0369a1"/>
+    <text x="582" y="182"><tspan fill="#38bdf8" font-weight="700">STEP 2</tspan>  docs/START_HERE.md → skills/SKILL.md</text>
+
+    <rect x="570" y="200" width="368" height="32" rx="4" fill="#082f49" stroke="#0369a1"/>
+    <text x="582" y="220"><tspan fill="#38bdf8" font-weight="700">STEP 3</tspan>  .gitignore → .env.example → tsconfig</text>
+
+    <rect x="570" y="238" width="368" height="32" rx="4" fill="#082f49" stroke="#0369a1"/>
+    <text x="582" y="258"><tspan fill="#38bdf8" font-weight="700">STEP 4</tspan>  schema.ts → pure src/lib/* engine</text>
+
+    <rect x="570" y="276" width="368" height="32" rx="4" fill="#082f49" stroke="#0369a1"/>
+    <text x="582" y="296"><tspan fill="#38bdf8" font-weight="700">STEP 5</tspan>  UI + Feather Themes + Speed budgets</text>
+
+    <rect x="570" y="314" width="368" height="32" rx="4" fill="#083344" stroke="#2dd4bf"/>
+    <text x="582" y="334" fill="#5eead4" font-weight="700">STEP 6  ci.yml → Live Demo → Visual README</text>
+  </g>
+
+  <text x="570" y="370" fill="#94a3b8" font-family="ui-monospace, monospace" font-size="10.5">$ node bin/stack-blueprints.mjs recommend --ram=4 --need=saas</text>
 </svg>

@@ -2,7 +2,7 @@
 
 > **Owner:** CRTA Tech Solutions  
 > **Repository:** `https://github.com/kelli-dotcom/stack-blueprints`  
-> **Status:** `v1.0.0` — Live, 0 dependencies, 5 Stack Tiers + 5 Workflow File Orders + CLI + AI Skill
+> **Status:** `v1.1.0` — Live Ocean Blue 5-Tier visual front door (`demo/hero-banner.svg` + `demo/preview.svg`), hosted interactive Stack Recommender (`https://kelli-dotcom.github.io/stack-blueprints/preview/`), 0 dependencies, CLI + AI Skill.
 
 ## Verification Command
 ```bash
