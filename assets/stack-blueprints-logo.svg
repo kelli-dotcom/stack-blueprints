@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <title>Stack Blueprints logo — a stack of five tiers</title>
+  <rect x="4" y="4" width="232" height="232" rx="52" fill="#041524"/>
+  <g fill="#7dcfff">
+    <rect x="84" y="54" width="72" height="20" rx="6"/>
+    <rect x="78" y="82" width="84" height="20" rx="6"/>
+    <rect x="72" y="110" width="96" height="20" rx="6"/>
+    <rect x="66" y="138" width="108" height="20" rx="6"/>
+    <rect x="60" y="166" width="120" height="20" rx="6"/>
+  </g>
+</svg>
