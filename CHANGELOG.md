@@ -4,6 +4,22 @@ All updates are opt-in. Nothing updates on its own. A dev reads this file
 first, then chooses whether to update, and stays on the old version for
 as long as they want.
 
+## 1.0.1 — 2026-11-28
+
+What changed in this release:
+
+- stack-selector retro-updated to the maker's standard (title, trigger, job, steps, what it is not, what it never does, real cases, the rule in one line, the tag, under 8 KB).
+
+What breaks in 1.0.1:
+
+- Nothing breaking.
+
+What a dev should check before updating:
+
+- Read this entry first, then update only if they want the new bits.
+- Run the verification command after updating: `bun bin/stack-blueprints.mjs list && bun bin/stack-blueprints.mjs recommend --ram=2 --need=mvp && bun bin/stack-blueprints.mjs order kickoff`.
+- If they do not want any of this, they can stay on their old version. Nothing will change in their project until they run the update.
+
 ## 0.1.0 — [date]
 
 What changed in this release:
