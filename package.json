@@ -1,6 +1,6 @@
 {
   "name": "stack-blueprints",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Zero-dependency developer stack matrix (from lightest <5KB to heavy enterprise) + workflow file-order playbooks, CLI recommender & AI agent skill. By CRTA Tech Solutions.",
   "type": "module",
   "main": "src/stacks.mjs",
